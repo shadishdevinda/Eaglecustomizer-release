@@ -1,0 +1,2 @@
+445f9487d17eb14d53a464d890e9bf4cdd4e62d42c74ce71ecbdcb53be98faca  EagleCustomizer-Setup-2.1.0.exe
+cd4b5a8a7b29df23463a53e40a3c3dcd1675f54b1b08d04ca0950daa7684b14e  EagleCustomizer.exe
