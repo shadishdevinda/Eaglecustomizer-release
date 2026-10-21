@@ -1,0 +1,13 @@
+# Binary files git ekata commit karanne nae - GitHub "Releases" ekata
+# upload karanna (Release assets). Hethuwa:
+#   - .deb eka 36 MB. git ekata dammoth hama clone ekakatama eka enawa,
+#     saha history eken kawadawath ain wenne nae.
+#   - Releases eken download count penawa, saha version ekak ekak wenama
+#     thiyaganna puluwan.
+*.deb
+*.exe
+*.zip
+
+# PDF eka: podi (2 MB) nisa repo ekata dammath kamak nae. Release asset ekak
+# widihata one nam, pahala line eke # eka ain karanna.
+# *.pdf
