@@ -93,6 +93,40 @@ Compare the result with the line in `SHA256SUMS.txt`.
 
 ---
 
+## How these files are built
+
+Every release is built by hand from the private source repository, on a clean
+machine, and checked before it is published here.
+
+| File | Built with |
+|---|---|
+| `eaglecustomizer_x.y.z_amd64.deb` | `packaging/linux/build_deb_nuitka.sh` — runs inside an `ubuntu:22.04` container (podman), so one package works on Ubuntu 22.04, 24.04 and 26.04 |
+| `EagleCustomizer-Setup-x.y.z.exe` | `build_windows.bat` on Windows 10/11 (PyInstaller + Inno Setup) |
+| `Eagle-Customizer-Guide-Sinhala.pdf` | `tools/build_guide.py` (WeasyPrint) |
+| `SHA256SUMS.txt` | `python3 tools/release_info.py checksums dist` |
+| App icon (`.png` / `.ico`) | `python3 tools/make_icon.py` |
+
+The Ubuntu package is compiled to a native binary with Nuitka. Python and Qt are
+bundled inside it, and no `.py` source files are shipped:
+
+```bash
+dpkg-deb -c eaglecustomizer_2.1.0_amd64.deb | grep -c '\.py$'    # 0
+```
+
+Before each release the package is installed and started in a clean container
+for every supported Ubuntu version:
+
+```bash
+for IMG in ubuntu:22.04 ubuntu:24.04 ubuntu:26.04; do
+  podman run --rm -v "$PWD":/deb:ro "$IMG" bash -c '
+    apt-get update -qq
+    apt-get install -y -qq /deb/eaglecustomizer_*_amd64.deb
+    QT_QPA_PLATFORM=offscreen timeout 15 eaglecustomizer; echo "exit=$?"'
+done
+```
+
+---
+
 ## Privacy
 
 Eagle Customizer does **not** send or store your mouse or keyboard input
