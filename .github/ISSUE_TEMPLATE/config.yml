@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 💬 Send feedback or ideas
+    url: https://eaglecustomizer.vercel.app/feedback
+    about: Suggestions and general feedback go here
+  - name: 🔒 Report a security problem
+    url: https://github.com/shadishdevinda/Eaglecustomizer-release/security/advisories/new
+    about: Please report security issues privately, not as a public issue
