@@ -1,0 +1,54 @@
+name: 🐞 Bug report
+description: Something in Eagle Customizer is not working
+labels: ["bug"]
+body:
+  - type: input
+    id: version
+    attributes:
+      label: App version
+      description: Menu ⋯ → About Eagle Customizer
+      placeholder: "2.1.1"
+    validations:
+      required: true
+  - type: dropdown
+    id: os
+    attributes:
+      label: Operating system
+      options:
+        - Windows 11
+        - Windows 10
+        - Ubuntu 24.04
+        - Ubuntu (other version)
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: Device
+      description: Mouse / keyboard / headphones model, if related
+      placeholder: "Logitech M720"
+  - type: textarea
+    id: steps
+    attributes:
+      label: What did you do?
+      placeholder: |
+        1. Opened the app
+        2. Selected my mouse
+        3. Set Side button → Copy
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: What happened? What did you expect?
+    validations:
+      required: true
+  - type: textarea
+    id: log
+    attributes:
+      label: Error log (optional)
+      description: |
+        Ubuntu: ~/.config/eaglecustomizer/error.log
+        Windows: %APPDATA%\EagleCustomizer\error.log
+        Please check it does not contain anything private before pasting.
+      render: text
