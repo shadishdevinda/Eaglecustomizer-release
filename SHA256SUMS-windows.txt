@@ -1,2 +1,2 @@
-486dd77dcc5a5aa3de97146ff50bc40c1271bd99552b1e7b9606a27ca67a2e32  EagleCustomizer-Setup-2.1.1.exe
-f0b3bd1155f5552b5aba3c25405d018326ae074be97b63bc064107739504a94c  EagleCustomizer.exe
+c1f6fccf56e095ae1a9a1b257eb6ead8933bce1fd2e8cf8ca64a417c50c478e6  EagleCustomizer-Setup-2.2.0.exe
+092f2fcaeebfce910d6d5dcd2a6178e66df14de4114a508c6b954f50e37f8afc  EagleCustomizer.exe
