@@ -1,4 +1,3 @@
-```markdown
 # 🦅 Eagle Customizer — Official Releases
 
 [![Version](https://img.shields.io/badge/version-2.2.0-blue.svg)](https://github.com/shadishdevinda/eaglecustomizer-release/releases)
@@ -77,9 +76,7 @@ Official binary release repository for **Eagle Customizer** by **Twin Eagle Stud
 4. Launch the app from your application launcher (search **Eagle Customizer**) or execute:
    ```bash
    eaglecustomizer
-   ```
 
----
 
 ## 🗑️ Uninstallation Instructions
 
