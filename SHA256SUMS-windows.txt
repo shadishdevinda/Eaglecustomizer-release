@@ -1,0 +1,2 @@
+6276ee3f49a19c8153910879a3d6f8242f8a9574c30e230daffa0f2fe940f601 *EagleCustomizer.exe
+e0afe0bedc4c8d67622cd9cb4176db078c2a74546f0660279b7b26c29c791434 *EagleCustomizer-Setup-2.2.0.exe

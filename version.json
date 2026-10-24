@@ -1,7 +1,19 @@
 {
   "version": "2.2.0",
-  "released": "2026-10-23",
-  "notes": "Describe what is new here.",
+  "released": "2026-10-24",
+  "notes": "Pure Rust native build with Slint GUI.",
   "download_url": "https://eaglecustomizer.vercel.app/download",
-  "feedback_url": "https://eaglecustomizer.vercel.app/feedback"
+  "feedback_url": "https://eaglecustomizer.vercel.app/feedback",
+  "packages": {
+    "linux": {
+      "url": "https://github.com/shadishdevinda/Eaglecustomizer-release/releases/download/v2.2.0/eaglecustomizer_2.2.0_amd64.deb",
+      "sha256": "",
+      "size": 0
+    },
+    "windows": {
+      "url": "https://github.com/shadishdevinda/Eaglecustomizer-release/releases/download/v2.2.0/EagleCustomizer-Setup-2.2.0.exe",
+      "sha256": "e0afe0bedc4c8d67622cd9cb4176db078c2a74546f0660279b7b26c29c791434",
+      "size": 5884734
+    }
+  }
 }
