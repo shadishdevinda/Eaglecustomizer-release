@@ -1,2 +1,0 @@
-13f05bf7f903c1004916b1c8c53d06187ff86a80ede574a240dc0a9418c293a1  *eaglecustomizer_2.2.0_amd64.deb
-e0afe0bedc4c8d67622cd9cb4176db078c2a74546f0660279b7b26c29c791434 *EagleCustomizer-Setup-2.2.0.exe
