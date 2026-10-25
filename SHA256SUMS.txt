@@ -1,0 +1,2 @@
+eff171e90b8927d25574550e7afe067ae6bfff3171a658f310de9b0d000ad05a  eaglecustomizer_2.2.1_amd64.deb
+dc5d8605a3060189a7f05d0ab996e02cb611aea722b4f9b775fbf8cda7e88d07  EagleCustomizer-Setup-2.2.1.exe
