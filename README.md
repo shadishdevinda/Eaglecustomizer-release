@@ -1,98 +1,95 @@
 # 🦅 Eagle Customizer — Official Releases
 
-[![Version](https://img.shields.io/badge/version-2.2.0-blue.svg)](https://github.com/shadishdevinda/eaglecustomizer-release/releases)
+[![Version](https://img.shields.io/badge/version-1.0.4-blue.svg)](https://github.com/shadishdevinda/eaglecustomizer-release/releases/latest)
 [![Rust](https://img.shields.io/badge/built%20with-Rust-orange.svg)](https://www.rust-lang.org/)
 [![GUI](https://img.shields.io/badge/GUI-Slint%20Native-6f42c1.svg)](https://slint.dev/)
 [![License](https://img.shields.io/badge/license-Proprietary-lightgrey.svg)](LICENSE)
 [![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20Linux%20(Ubuntu)-success.svg)]()
 
-Official binary release repository for **Eagle Customizer** by **Twin Eagle Studio**. Here you will find official compiled installers, standalone executables, Debian packages, and verification checksums for every stable release.
+Official binary release repository for **Eagle Customizer** by **Twin Eagle Studio**. Here you will find the portable Windows executable, the Debian package, and verification checksums for every stable release.
 
 🌐 **Official Website**: [https://eaglecustomizer.vercel.app](https://eaglecustomizer.vercel.app)  
-📂 **Source Code Repository**: [shadishdevinda/EagleCustomizer](https://github.com/shadishdevinda/EagleCustomizer)
+🛍️ **Microsoft Store**: [Eagle Customizer](https://apps.microsoft.com/detail/9N72CM5ZV3N5)
+
+> This file is updated automatically with every release. Latest version: **1.0.4** (2026-10-28).
 
 ---
 
 ## 📖 Overview
 
-**Eagle Customizer** is an ultra-lightweight, high-performance peripheral management and remapping application designed for power users, gamers, and developers. Built from the ground up in **100% pure Rust** with a modern **Slint native GUI**, it delivers instant responsiveness with virtually zero system overhead.
+**Eagle Customizer** is a lightweight peripheral management and remapping application. It is written in **pure Rust** with a native **Slint GUI**, so it starts instantly and uses very little memory and CPU.
 
-### ⚡ Why Pure Rust?
-- **Ultra-Low Memory Footprint**: The background remapping daemon (`eaglecustomizerd`) consumes only **~2.8 MB of RAM** and ~0% CPU.
-- **Zero Heavy Dependencies**: Completely free of Python, Qt, PyInstaller, or Electron runtimes.
-- **Instant Launch**: Starts up in milliseconds using a native software/hardware-rendered Slint UI.
-- **Background Persistence**: Closing the window detaches the GUI completely while keeping your hardware remappings active in the background.
+- **No heavy runtimes**: no Python, Qt, Electron or .NET.
+- **Works in the background**: close the window and your button mappings keep working (tray icon on Windows, a small background service on Linux).
 
 ---
 
 ## ✨ Features
 
-- **🖱️ Mouse Customization**: Remap up to 12 physical buttons (Left, Right, Middle, Wheel Up/Down, Wheel Tilt Left/Right, Side Buttons 1–5) to any of the 52 built-in system and media actions. Left-click is locked by design to prevent accidental lockout. Includes pointer speed, acceleration profile, natural scrolling, and left-handed mode.
-- **⌨️ Keyboard Remapping**: Full interactive visual keyboard remapping. Dynamically inspects physical layout and supports per-device Numpad toggling. Includes key-repeat speed and repeat delay controls.
-- **🎧 Audio Device Management**: Inspect connected headphones, speakers, and microphones. Adjust volume levels (up to 150%), toggle mute, change default playback/recording sinks, and test audio playback.
-- **👆 Touchpad Controls**: Touchpad speed, tap-to-click, two-finger scrolling, natural scrolling, and automatic disable-while-typing.
-- **🎨 System Theme Follow**: Seamlessly follows system Dark/Light mode and native accent colors (including GNOME 47+ accents), or allows manual theme pinning.
+- **🖱️ Mouse Customization**: Remap mouse buttons and the wheel to any of the built-in system and media actions. Left-click is locked by design to prevent accidental lockout. Includes pointer speed, acceleration, natural scrolling, and left-handed mode.
+- **⌨️ Keyboard Remapping**: Visual keyboard remapping with per-device Numpad toggling, plus key-repeat speed and delay.
+- **🎧 Audio Device Management**: Headphones, speakers and microphones: volume, mute, default playback/recording device, and a test sound.
+- **👆 Touchpad Controls**: Speed, tap-to-click, two-finger scrolling, natural scrolling, and disable-while-typing.
+- **🎨 Theme Follow**: Follows the system dark/light mode and accent color, or pick a theme yourself.
+
+**On Windows**, mappings apply to all connected mice / all connected keyboards at once, and only the 5 standard mouse buttons can be remapped (Windows does not report extra side buttons).
 
 ---
 
-## 📦 Downloads (v2.2.0)
+## 📦 Downloads (v1.0.4)
 
-| OS / Platform | Package File | Description | Download |
+| OS / Platform | Package | Description | Download |
 | :--- | :--- | :--- | :--- |
-| **Windows 10 / 11 (64-bit)** | `EagleCustomizer-Setup-2.2.0.exe` | Setup Wizard (Inno Setup) | [Download](https://github.com/shadishdevinda/eaglecustomizer-release/releases/latest) |
-| **Windows 10 / 11 (64-bit)** | `EagleCustomizer.exe` | Portable Standalone Executable | [Download](https://github.com/shadishdevinda/eaglecustomizer-release/releases/latest) |
-| **Ubuntu / Debian (amd64)** | `eaglecustomizer_2.2.0_amd64.deb` | Native `.deb` Package (~5 MB) | [Download](https://github.com/shadishdevinda/eaglecustomizer-release/releases/latest) |
-| **All Platforms** | `SHA256SUMS.txt` | Cryptographic Checksums | [Download](https://github.com/shadishdevinda/eaglecustomizer-release/releases/latest) |
+| **Windows 10 / 11** | Microsoft Store | Recommended - installs and updates automatically | [Get it from the Store](https://apps.microsoft.com/detail/9N72CM5ZV3N5) |
+| **Windows 10 / 11 (64-bit)** | `EagleCustomizer.exe` | Portable executable (no install) | [Download](https://github.com/shadishdevinda/eaglecustomizer-release/releases/download/v1.0.4/EagleCustomizer.exe) |
+| **Ubuntu 22.04+ / Debian (amd64)** | `eaglecustomizer_1.0.4_amd64.deb` | Native `.deb` package | [Download](https://github.com/shadishdevinda/eaglecustomizer-release/releases/download/v1.0.4/eaglecustomizer_1.0.4_amd64.deb) |
+| **All** | `SHA256SUMS.txt` | Checksums | [Download](https://github.com/shadishdevinda/eaglecustomizer-release/releases/download/v1.0.4/SHA256SUMS.txt) |
 
 ---
 
-## 📥 Installation Instructions
+## 📥 Installation
 
-### 🪟 Windows (Windows 10 / 11 64-bit)
+### 🪟 Windows 10 / 11
 
-#### Method 1: Installer Setup Wizard (Recommended)
-1. Download **`EagleCustomizer-Setup-2.2.0.exe`**.
-2. Double-click the downloaded setup file.
-3. Follow the wizard prompts (select optional desktop shortcut or start-on-boot).
-4. Launch **Eagle Customizer** from your Desktop shortcut or Start Menu.
+#### Microsoft Store (Recommended)
+1. Open [Eagle Customizer in the Microsoft Store](https://apps.microsoft.com/detail/9N72CM5ZV3N5) and click **Get**.
+2. Launch it from the Start Menu. The Store keeps it up to date.
 
-#### Method 2: Portable Standalone Executable
+#### Portable executable
 1. Download **`EagleCustomizer.exe`**.
-2. Move it to your desired folder (e.g. `C:\Tools\EagleCustomizer\`).
-3. Double-click to run directly. No installation or registry changes required.
+2. Move it to a folder of your choice (e.g. `C:\Tools\EagleCustomizer\`).
+3. Double-click to run. Windows SmartScreen may warn about a new file: click **More info → Run anyway**.
+
+Use only one of the two (Store or portable), not both.
 
 ---
 
 ### 🐧 Linux (Ubuntu / Debian / Linux Mint / Pop!_OS)
 
-1. Download **`eaglecustomizer_2.2.0_amd64.deb`**.
-2. Open terminal in the download directory and run:
+1. Download **`eaglecustomizer_1.0.4_amd64.deb`**.
+2. Open a terminal in the download folder and run:
    ```bash
-   sudo apt update
-   sudo apt install ./eaglecustomizer_2.2.0_amd64.deb
+   sudo apt install ./eaglecustomizer_1.0.4_amd64.deb
    ```
-3. **Important (First Time Setup)**:  
-   Log out of your Linux desktop and log back in (or reboot) so the newly installed `udev` rules take effect and grant your user permissions to access `/dev/input` and `/dev/uinput` devices.
-4. Launch the app from your application launcher (search **Eagle Customizer**) or execute:
-   ```bash
-   eaglecustomizer
+3. **First time only**: log out and back in (or reboot) so the installed `udev` rules give your user access to `/dev/input` and `/dev/uinput`.
+4. Launch **Eagle Customizer** from your application launcher, or run `eaglecustomizer`.
 
+The app checks for new versions once a day and can update itself.
 
-## 🗑️ Uninstallation Instructions
+---
+
+## 🗑️ Uninstallation
 
 ### 🪟 Windows
-1. Open **Windows Settings** (`Win + I`) → **Apps** → **Installed Apps** (or Control Panel → **Programs and Features**).
-2. Find **Eagle Customizer** in the list.
-3. Click the three dots (`...`) and click **Uninstall**.
-4. The uninstaller will cleanly remove all installed binaries and shortcuts.
+- **Store app**: Settings → Apps → Installed apps → **Eagle Customizer** → `...` → **Uninstall**.
+- **Portable**: turn off *Start with computer* in the app, quit it from the tray icon, then delete `EagleCustomizer.exe`.
 
-### 🐧 Linux (Ubuntu / Debian)
-To remove the application and background daemon:
+### 🐧 Linux
 ```bash
 sudo apt remove eaglecustomizer
 ```
 
-To remove all configuration files and error logs created by the user:
+To also remove your settings and logs:
 ```bash
 rm -rf ~/.config/eaglecustomizer
 ```
@@ -101,41 +98,39 @@ rm -rf ~/.config/eaglecustomizer
 
 ## 🔐 Checksum Verification
 
-To verify that your downloaded file has not been corrupted or altered, check its SHA-256 hash against `SHA256SUMS.txt`:
+Check a download against `SHA256SUMS.txt`:
 
-### On Linux:
+### Linux
 ```bash
-sha256sum -c SHA256SUMS.txt
+sha256sum -c --ignore-missing SHA256SUMS.txt
 ```
-*(Should output `... OK` for each matched file)*
 
-### On Windows (PowerShell):
+### Windows (PowerShell)
 ```powershell
-Get-FileHash .\EagleCustomizer-Setup-2.2.0.exe -Algorithm SHA256
 Get-FileHash .\EagleCustomizer.exe -Algorithm SHA256
 ```
-Compare the output string with the hash in `SHA256SUMS.txt`.
+Compare the output with the hash in `SHA256SUMS.txt`.
+
+Checksums for v1.0.4:
+```
+39d798a992fd90637c9cc3fc1b88d6a5acc556a2593947af4f67bb2ae1a38464  eaglecustomizer_1.0.4_amd64.deb
+fccd30b9b87a767baecd84268e4b7a27e6811daa2ad5d36bf77b2a00e5d45237  EagleCustomizer.exe
+```
 
 ---
 
-## ⚙️ Configuration Files & Log Locations
+## ⚙️ Settings & Log Locations
 
-Eagle Customizer stores device mappings and application configurations in an atomic JSON file:
-
-- **Linux Settings**: `~/.config/eaglecustomizer/config.json`
-- **Linux Error Log**: `~/.config/eaglecustomizer/error.log`
-- **Windows Settings**: `%USERPROFILE%\.config\eaglecustomizer\config.json`
-- **Windows Error Log**: `%USERPROFILE%\.config\eaglecustomizer\error.log`
+- **Linux**: `~/.config/eaglecustomizer/config.json` and `error.log`
+- **Windows**: `%USERPROFILE%\.config\eaglecustomizer\config.json` and `error.log`
 
 ---
 
-## 💬 Feedback & Community
+## 💬 Feedback
 
-- 🌐 **Project Home**: [https://eaglecustomizer.vercel.app](https://eaglecustomizer.vercel.app)
-- 📝 **Feedback & Feature Requests**: [Submit Feedback](https://eaglecustomizer.vercel.app/feedback)
-- 🐛 **Report a Bug**: [GitHub Issues](https://github.com/shadishdevinda/EagleCustomizer/issues)
+- 🌐 **Website**: [https://eaglecustomizer.vercel.app](https://eaglecustomizer.vercel.app)
+- 📝 **Feedback & feature requests**: [Submit Feedback](https://eaglecustomizer.vercel.app/feedback)
 
 ---
 
 *Copyright © 2026 Twin Eagle Studio. All rights reserved.*
-```
