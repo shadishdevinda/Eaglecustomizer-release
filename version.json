@@ -1,19 +1,19 @@
 {
-  "version": "1.0.4",
-  "released": "2026-10-28",
+  "version": "1.0.5",
+  "released": "2026-10-29",
   "notes": "Bug fixes and improvements.",
   "download_url": "https://eaglecustomizer.vercel.app/download",
   "feedback_url": "https://eaglecustomizer.vercel.app/feedback",
   "packages": {
     "linux": {
-      "url": "https://github.com/shadishdevinda/eaglecustomizer-release/releases/download/v1.0.4/eaglecustomizer_1.0.4_amd64.deb",
-      "sha256": "39d798a992fd90637c9cc3fc1b88d6a5acc556a2593947af4f67bb2ae1a38464",
-      "size": 6254314
+      "url": "https://github.com/shadishdevinda/eaglecustomizer-release/releases/download/v1.0.5/eaglecustomizer_1.0.5_amd64.deb",
+      "sha256": "159100b9bcde49db92a45f36248dff47f03de2c6a6e2833f79d988e4a1488737",
+      "size": 6252906
     },
     "windows_portable": {
-      "url": "https://github.com/shadishdevinda/eaglecustomizer-release/releases/download/v1.0.4/EagleCustomizer.exe",
-      "sha256": "fccd30b9b87a767baecd84268e4b7a27e6811daa2ad5d36bf77b2a00e5d45237",
-      "size": 10804224
+      "url": "https://github.com/shadishdevinda/eaglecustomizer-release/releases/download/v1.0.5/EagleCustomizer.exe",
+      "sha256": "a3a53fdcedfa57b790d83e7667cde3d85aae755e7fbc76f1b59784c394703674",
+      "size": 10804736
     }
   }
 }
