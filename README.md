@@ -1,6 +1,6 @@
 # 🦅 Eagle Customizer — Official Releases
 
-[![Version](https://img.shields.io/badge/version-1.0.10-blue.svg)](https://github.com/shadishdevinda/eaglecustomizer-release/releases/latest)
+[![Version](https://img.shields.io/badge/version-1.0.11-blue.svg)](https://github.com/shadishdevinda/eaglecustomizer-release/releases/latest)
 [![Rust](https://img.shields.io/badge/built%20with-Rust-orange.svg)](https://www.rust-lang.org/)
 [![GUI](https://img.shields.io/badge/GUI-Slint%20Native-6f42c1.svg)](https://slint.dev/)
 [![License](https://img.shields.io/badge/license-Proprietary-lightgrey.svg)](LICENSE)
@@ -11,7 +11,7 @@ Official binary release repository for **Eagle Customizer** by **Twin Eagle Stud
 🌐 **Official Website**: [https://eaglecustomizer.vercel.app](https://eaglecustomizer.vercel.app)  
 🛍️ **Microsoft Store**: [Eagle Customizer](https://apps.microsoft.com/detail/9N72CM5ZV3N5)
 
-> This file is updated automatically with every release. Latest version: **1.0.10** (2026-10-29).
+> This file is updated automatically with every release. Latest version: **1.0.11** (2026-10-29).
 
 ---
 
@@ -36,14 +36,14 @@ Official binary release repository for **Eagle Customizer** by **Twin Eagle Stud
 
 ---
 
-## 📦 Downloads (v1.0.10)
+## 📦 Downloads (v1.0.11)
 
 | OS / Platform | Package | Description | Download |
 | :--- | :--- | :--- | :--- |
 | **Windows 10 / 11** | Microsoft Store | Recommended - installs and updates automatically | [Get it from the Store](https://apps.microsoft.com/detail/9N72CM5ZV3N5) |
-| **Windows 10 / 11 (64-bit)** | `EagleCustomizer.exe` | Portable executable (no install) | [Download](https://github.com/shadishdevinda/eaglecustomizer-release/releases/download/v1.0.10/EagleCustomizer.exe) |
-| **Ubuntu 22.04+ / Debian (amd64)** | `eaglecustomizer_1.0.10_amd64.deb` | Native `.deb` package | [Download](https://github.com/shadishdevinda/eaglecustomizer-release/releases/download/v1.0.10/eaglecustomizer_1.0.10_amd64.deb) |
-| **All** | `SHA256SUMS.txt` | Checksums | [Download](https://github.com/shadishdevinda/eaglecustomizer-release/releases/download/v1.0.10/SHA256SUMS.txt) |
+| **Windows 10 / 11 (64-bit)** | `EagleCustomizer.exe` | Portable executable (no install) | [Download](https://github.com/shadishdevinda/eaglecustomizer-release/releases/download/v1.0.11/EagleCustomizer.exe) |
+| **Ubuntu 22.04+ / Debian (amd64)** | `eaglecustomizer_1.0.11_amd64.deb` | Native `.deb` package | [Download](https://github.com/shadishdevinda/eaglecustomizer-release/releases/download/v1.0.11/eaglecustomizer_1.0.11_amd64.deb) |
+| **All** | `SHA256SUMS.txt` | Checksums | [Download](https://github.com/shadishdevinda/eaglecustomizer-release/releases/download/v1.0.11/SHA256SUMS.txt) |
 
 ---
 
@@ -66,10 +66,10 @@ Use only one of the two (Store or portable), not both.
 
 ### 🐧 Linux (Ubuntu / Debian / Linux Mint / Pop!_OS)
 
-1. Download **`eaglecustomizer_1.0.10_amd64.deb`**.
+1. Download **`eaglecustomizer_1.0.11_amd64.deb`**.
 2. Open a terminal in the download folder and run:
    ```bash
-   sudo apt install ./eaglecustomizer_1.0.10_amd64.deb
+   sudo apt install ./eaglecustomizer_1.0.11_amd64.deb
    ```
 3. **First time only**: log out and back in (or reboot) so the installed `udev` rules give your user access to `/dev/input` and `/dev/uinput`.
 4. Launch **Eagle Customizer** from your application launcher, or run `eaglecustomizer`.
@@ -111,10 +111,10 @@ Get-FileHash .\EagleCustomizer.exe -Algorithm SHA256
 ```
 Compare the output with the hash in `SHA256SUMS.txt`.
 
-Checksums for v1.0.10:
+Checksums for v1.0.11:
 ```
-cc2cfd987fb158d8131d0506b6cb5d9f527e8c91780fc389fa709256da8b5648  eaglecustomizer_1.0.10_amd64.deb
-4d768c3170f9f53df88a28862787d7ddb63b7d89a2c0f1490c50397f11ad1e56  EagleCustomizer.exe
+42e53bbda293adc98ba9aa61dac75a353b35c45a3d875a29f59dbca69e6181b2  eaglecustomizer_1.0.11_amd64.deb
+983b9d6be969f897611cbfd58ddc290892366124e3d16ed705296ab89135c5f3  EagleCustomizer.exe
 ```
 
 ---
