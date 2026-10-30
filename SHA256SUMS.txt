@@ -1,0 +1,2 @@
+c4f958e12edc3f62edbfe112e9a1847fef1650e55217767cb5dd7ab3cff5fe3e  eaglecustomizer_1.0.13_amd64.deb
+06a2d7bcbb60fb2e4c8f629f67469af1aff174608263ff12f0f0eb668294dc1f  EagleCustomizer.exe
