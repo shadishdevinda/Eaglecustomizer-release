@@ -1,19 +1,19 @@
 {
-  "version": "1.0.13",
-  "released": "2026-10-30",
-  "notes": "Bug fixes and improvements.",
+  "version": "1.0.14",
+  "released": "2026-11-05",
+  "notes": "## What's new",
   "download_url": "https://www.eaglecustomizer.com/download",
   "feedback_url": "https://www.eaglecustomizer.com/feedback",
   "packages": {
     "linux": {
-      "url": "https://github.com/shadishdevinda/eaglecustomizer-release/releases/download/v1.0.13/eaglecustomizer_1.0.13_amd64.deb",
-      "sha256": "c4f958e12edc3f62edbfe112e9a1847fef1650e55217767cb5dd7ab3cff5fe3e",
-      "size": 6257864
+      "url": "https://github.com/shadishdevinda/eaglecustomizer-release/releases/download/v1.0.14/eaglecustomizer_1.0.14_amd64.deb",
+      "sha256": "1ec58b817f87c9aa909cf2f31c2b06a1dde0c64fa13b30b1a4708db5f583c184",
+      "size": 6260152
     },
     "windows_portable": {
-      "url": "https://github.com/shadishdevinda/eaglecustomizer-release/releases/download/v1.0.13/EagleCustomizer.exe",
-      "sha256": "06a2d7bcbb60fb2e4c8f629f67469af1aff174608263ff12f0f0eb668294dc1f",
-      "size": 10819584
+      "url": "https://github.com/shadishdevinda/eaglecustomizer-release/releases/download/v1.0.14/EagleCustomizer.exe",
+      "sha256": "f543afd2879fdc544e9d212d190b829c8c8d7670292757223b983ffb9f2c68ff",
+      "size": 10846720
     }
   }
 }
