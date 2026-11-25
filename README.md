@@ -1,17 +1,17 @@
 # 🦅 Eagle Customizer — Official Releases
 
-[![Version](https://img.shields.io/badge/version-1.0.14-blue.svg)](https://github.com/shadishdevinda/eaglecustomizer-release/releases/latest)
+[![Version](https://img.shields.io/badge/version-1.0.15-blue.svg)](https://github.com/shadishdevinda/eaglecustomizer-release/releases/latest)
 [![Rust](https://img.shields.io/badge/built%20with-Rust-orange.svg)](https://www.rust-lang.org/)
 [![GUI](https://img.shields.io/badge/GUI-Slint%20Native-6f42c1.svg)](https://slint.dev/)
 [![License](https://img.shields.io/badge/license-Proprietary-lightgrey.svg)](LICENSE)
 [![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20Linux%20(Ubuntu)-success.svg)]()
 
-Official binary release repository for **Eagle Customizer** by **Twin Eagle Studio**. Here you will find the portable Windows executable, the Debian package, and verification checksums for every stable release.
+Official binary release repository for **Eagle Customizer** by **Twin Eagle Studio**. Here you will find the Debian package and signed checksums for every stable release. Windows is released through the Microsoft Store.
 
 🌐 **Official Website**: [https://www.eaglecustomizer.com](https://www.eaglecustomizer.com)  
 🛍️ **Microsoft Store**: [Eagle Customizer](https://apps.microsoft.com/detail/9N72CM5ZV3N5)
 
-> This file is updated automatically with every release. Latest version: **1.0.14** (2026-11-05).
+> This file is updated automatically with every release. Latest version: **1.0.15** (2026-11-25).
 
 ---
 
@@ -36,14 +36,14 @@ Official binary release repository for **Eagle Customizer** by **Twin Eagle Stud
 
 ---
 
-## 📦 Downloads (v1.0.14)
+## 📦 Downloads (v1.0.15)
 
 | OS / Platform | Package | Description | Download |
 | :--- | :--- | :--- | :--- |
 | **Windows 10 / 11** | Microsoft Store | Recommended - installs and updates automatically | [Get it from the Store](https://apps.microsoft.com/detail/9N72CM5ZV3N5) |
-| **Windows 10 / 11 (64-bit)** | `EagleCustomizer.exe` | Portable executable (no install) | [Download](https://github.com/shadishdevinda/eaglecustomizer-release/releases/download/v1.0.14/EagleCustomizer.exe) |
-| **Ubuntu 22.04+ / Debian (amd64)** | `eaglecustomizer_1.0.14_amd64.deb` | Native `.deb` package | [Download](https://github.com/shadishdevinda/eaglecustomizer-release/releases/download/v1.0.14/eaglecustomizer_1.0.14_amd64.deb) |
-| **All** | `SHA256SUMS.txt` | Checksums | [Download](https://github.com/shadishdevinda/eaglecustomizer-release/releases/download/v1.0.14/SHA256SUMS.txt) |
+| **Ubuntu 22.04+ / Debian (amd64)** | `eaglecustomizer_1.0.15_amd64.deb` | Native `.deb` package | [Download](https://github.com/shadishdevinda/eaglecustomizer-release/releases/download/v1.0.15/eaglecustomizer_1.0.15_amd64.deb) |
+| **All** | `SHA256SUMS.txt` | Checksums | [Download](https://github.com/shadishdevinda/eaglecustomizer-release/releases/download/v1.0.15/SHA256SUMS.txt) |
+| **All** | `SHA256SUMS.txt.minisig` | Signature of the checksums | [Download](https://github.com/shadishdevinda/eaglecustomizer-release/releases/download/v1.0.15/SHA256SUMS.txt.minisig) |
 
 ---
 
@@ -51,30 +51,24 @@ Official binary release repository for **Eagle Customizer** by **Twin Eagle Stud
 
 ### 🪟 Windows 10 / 11
 
-#### Microsoft Store (Recommended)
 1. Open [Eagle Customizer in the Microsoft Store](https://apps.microsoft.com/detail/9N72CM5ZV3N5) and click **Get**.
 2. Launch it from the Start Menu. The Store keeps it up to date.
 
-#### Portable executable
-1. Download **`EagleCustomizer.exe`**.
-2. Move it to a folder of your choice (e.g. `C:\Tools\EagleCustomizer\`).
-3. Double-click to run. Windows SmartScreen may warn about a new file: click **More info → Run anyway**.
-
-Use only one of the two (Store or portable), not both.
+Using an older portable `EagleCustomizer.exe`? Install the Store app, then delete the `.exe` (turn off *Start with computer* in it first).
 
 ---
 
 ### 🐧 Linux (Ubuntu / Debian / Linux Mint / Pop!_OS)
 
-1. Download **`eaglecustomizer_1.0.14_amd64.deb`**.
+1. Download **`eaglecustomizer_1.0.15_amd64.deb`**.
 2. Open a terminal in the download folder and run:
    ```bash
-   sudo apt install ./eaglecustomizer_1.0.14_amd64.deb
+   sudo apt install ./eaglecustomizer_1.0.15_amd64.deb
    ```
 3. **First time only**: log out and back in (or reboot) so the installed `udev` rules give your user access to `/dev/input` and `/dev/uinput`.
 4. Launch **Eagle Customizer** from your application launcher, or run `eaglecustomizer`.
 
-The app checks for new versions once a day and can update itself.
+The app checks for new versions once a day and can update itself. It installs an update only if its signature is valid.
 
 ---
 
@@ -82,7 +76,7 @@ The app checks for new versions once a day and can update itself.
 
 ### 🪟 Windows
 - **Store app**: Settings → Apps → Installed apps → **Eagle Customizer** → `...` → **Uninstall**.
-- **Portable**: turn off *Start with computer* in the app, quit it from the tray icon, then delete `EagleCustomizer.exe`.
+- **Old portable `.exe`**: turn off *Start with computer* in the app, quit it from the tray icon, then delete `EagleCustomizer.exe`.
 
 ### 🐧 Linux
 ```bash
@@ -96,25 +90,18 @@ rm -rf ~/.config/eaglecustomizer
 
 ---
 
-## 🔐 Checksum Verification
+## 🔐 Verification
 
-Check a download against `SHA256SUMS.txt`:
+`SHA256SUMS.txt` is signed with [minisign](https://jedisct1.github.io/minisign/). First check the signature, then the download:
 
-### Linux
 ```bash
+minisign -V -m SHA256SUMS.txt -P RWRDYM2uec0Z+Kxt0bXAq56BBlteZdiZkxq4uwziuJYNcqporF5mnAqc
 sha256sum -c --ignore-missing SHA256SUMS.txt
 ```
 
-### Windows (PowerShell)
-```powershell
-Get-FileHash .\EagleCustomizer.exe -Algorithm SHA256
+Checksums for v1.0.15:
 ```
-Compare the output with the hash in `SHA256SUMS.txt`.
-
-Checksums for v1.0.14:
-```
-1ec58b817f87c9aa909cf2f31c2b06a1dde0c64fa13b30b1a4708db5f583c184  eaglecustomizer_1.0.14_amd64.deb
-f543afd2879fdc544e9d212d190b829c8c8d7670292757223b983ffb9f2c68ff  EagleCustomizer.exe
+63e50a8227838e076595ad1cef5da1bdec4d5d191f3f44495dcfc976f39c7e97  eaglecustomizer_1.0.15_amd64.deb
 ```
 
 ---
